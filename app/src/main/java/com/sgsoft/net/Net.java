@@ -91,7 +91,6 @@ public class Net<A> extends AsyncTask<Object, Integer, A> {
 	 * must use with local context not global context, when local context finish
 	 * request will be cancelled otherwise it run in background until complete
 	 * 
-	 * @see Net.isCancel
 	 */
 	private Net(Activity c, String server) {
 		context = c;
@@ -366,8 +365,8 @@ public class Net<A> extends AsyncTask<Object, Integer, A> {
 		add(key, value);
 	}
 
-	public void setOnCallbackListner(Callback<A> listner) {
-		callback = listner;
+	public void setOnCallbackListner(Callback<A> listener) {
+		callback = listener;
 	}
 
 	public boolean isPost() {
