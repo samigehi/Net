@@ -2,9 +2,13 @@
 
 * Simple light-weight HTTP client based on HttpUrlConnection
 * easy to use RESTful web-service communication
-  
 * run request on background thread and notify to UI thread when request is completed
   
+# Why use this 
+  * no dependancy, built on top of URLConnection native.
+  * light-weight only single file 10kb add in project and start networking task,
+  * In recent version of android (Marshmallow) apache HttpClient has been removed, it made request difficult, other networking libraries obsolete 
+  * make request, download any type of file, upload file, image loading, json request, etc.
   
   # GET
  
